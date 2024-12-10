@@ -1,0 +1,139 @@
+body {
+  font-family: 'Arial', sans-serif;
+background-image: linear-gradient(to right top, #d65db1, #e35fa9, #ee63a1, #f86899, #ff6f91);  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  color: #29006c;
+  font-weight: bolder;
+  font-size: 3.125rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.player {
+  text-align: center;
+  width: 45%;
+  color: #29006c;
+}
+
+.player h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.player-form{
+  color: #29006c;
+}
+
+.progress {
+  height: 100%;
+  background: radial-gradient(circle, rgba(0,0,0,1) 49%, rgba(9,9,121,1) 60%, rgba(9,9,121,1) 72%);
+  width: 0;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+.game-area {
+  position: relative;
+  width: 80vw;
+  height: 50vh;
+  margin: 20px auto;
+  border: 2px solid #ffd700;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, rgba(0,0,0,1) 49%, rgba(9,9,121,1) 60%, rgba(9,9,121,1) 72%);
+  border-radius: 50%;
+  display: none;
+  animation: pulse 0.8s infinite alternate;
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.8);
+}
+
+.instructions {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #ffd700;
+}
+
+.historial{
+  color: #29006c;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.history-list{
+  color: #29006c;
+  font-size: 1.25rem;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
